@@ -19,7 +19,7 @@ function pageReady() {
   localVideo = document.getElementById('localVideo');
   remoteVideo = document.getElementById('remoteVideo');
 endCallButton = document.getElementById("endCallButton");
-  serverConnection = new WebSocket('ws://' + 'webs2p-webs2p.1d35.starter-us-east-1.openshiftapps.com/');
+  serverConnection = new WebSocket('wss://' + 'webs2p-webs2p.1d35.starter-us-east-1.openshiftapps.com/');
     serverConnection.onopen = function()
     {
         console.log("socket connected");
